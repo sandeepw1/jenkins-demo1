@@ -22,7 +22,7 @@ pipeline {
     }
     stage('update-minikube') {
       steps {
-        sh 'kubectl set image deployment/pd1 jenkins-app=sandeepwalvekar/jenkis-app:${BUILD_NUMBER}'
+        sh 'kubectl set image deployment/pd1 jenkins-app=sandeepwalvekar/jenkins-app:${BUILD_NUMBER}'
       }
     }
   }
